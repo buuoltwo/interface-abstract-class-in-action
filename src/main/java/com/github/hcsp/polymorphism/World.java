@@ -35,37 +35,12 @@ public class World {
 
 
     static class 麻雀 extends Bird {
-//        public void 新陈代谢() {
-//            System.out.println("新陈代谢");
-//        }
-//
-//        public void 飞() {
-//            System.out.println("鸟儿飞");
-//        }
-
-//        public void 叫() {
-//            System.out.println("叽叽喳喳");
-//        }
     }
 
     static class 喜鹊 extends Bird{
-//        public void 新陈代谢() {
-//            System.out.println("新陈代谢");
-//        }
-//
-//        public void 飞() {
-//            System.out.println("鸟儿飞");
-//        }
-//
-//        public void 叫() {
-//            System.out.println("叽叽喳喳");
-//        }
     }
 
     static class 蝴蝶 extends Animal implements 会飞的东西{
-//        public void 新陈代谢() {
-//            System.out.println("新陈代谢");
-//        }
         @Override
         public void 飞() {
             System.out.println("蝴蝶飞");
@@ -87,9 +62,6 @@ public class World {
     }
 
     static class 猫 extends Animal implements 会叫的东西{
-//        public void 新陈代谢() {
-//            System.out.println("新陈代谢");
-//        }
         @Override
         public void 叫() {
             System.out.println("喵喵喵");
@@ -97,9 +69,6 @@ public class World {
     }
 
     static class 狗 extends Animal implements 会叫的东西{
-//        public void 新陈代谢() {
-//            System.out.println("新陈代谢");
-//        }
         @Override
         public void 叫() {
             System.out.println("汪汪汪");
