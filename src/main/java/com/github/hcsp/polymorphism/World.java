@@ -11,15 +11,6 @@ public class World {
     // 在建造成类型体系后，请尝试化简这个啰嗦的方法，体会多态带来的好处
     public static void 会飞的东西飞() {
         for (Object obj : objects) {
-//            if (obj instanceof 麻雀) {
-//                ((麻雀) obj).飞();
-//            } else if (obj instanceof 喜鹊) {
-//                ((喜鹊) obj).飞();
-//            } else if (obj instanceof 蝴蝶) {
-//                ((蝴蝶) obj).飞();
-//            } else if (obj instanceof 飞机) {
-//                ((飞机) obj).飞();
-//            }
             if(obj instanceof 会飞的东西) {
                 ((会飞的东西) obj).飞();
             }
@@ -28,17 +19,6 @@ public class World {
     // 在建造成类型体系后，请尝试化简这个啰嗦的方法，体会多态带来的好处
     public static void 会叫的东西叫() {
         for (Object obj : objects) {
-//            if (obj instanceof 麻雀) {
-//                ((麻雀) obj).叫();
-//            } else if (obj instanceof 喜鹊) {
-//                ((喜鹊) obj).叫();
-//            } else if (obj instanceof 救护车) {
-//                ((救护车) obj).叫();
-//            } else if (obj instanceof 猫) {
-//                ((猫) obj).叫();
-//            } else if (obj instanceof 狗) {
-//                ((狗) obj).叫();
-//            }
             if(obj instanceof 会叫的东西) {
                 ((会叫的东西) obj).叫();
             }
@@ -47,17 +27,6 @@ public class World {
     // 在建造成类型体系后，请尝试化简这个啰嗦的方法，体会多态带来的好处
     public static void 动物都能新陈代谢() {
         for (Object obj : objects) {
-//            if (obj instanceof 麻雀) {
-//                ((麻雀) obj).新陈代谢();
-//            } else if (obj instanceof 喜鹊) {
-//                ((喜鹊) obj).新陈代谢();
-//            } else if (obj instanceof 蝴蝶) {
-//                ((蝴蝶) obj).新陈代谢();
-//            } else if (obj instanceof 猫) {
-//                ((猫) obj).新陈代谢();
-//            } else if (obj instanceof 狗) {
-//                ((狗) obj).新陈代谢();
-//            }
             if(obj instanceof Animal) {
                 ((Animal) obj).新陈代谢();
             }
@@ -149,7 +118,7 @@ public class World {
         void 叫();
     }
 
-    private static class Animal implements 动物{
+    public static class Animal implements 动物{
         public void 新陈代谢() {
             System.out.println("新陈代谢");
         }
